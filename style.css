@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: url(img/top-banner.png) no-repeat;
+}
+
+.left-side-div {
+    flex-basis: 45%;
+    margin-top: 5%;
+}
+
+.right-side-div {
+    flex-basis: 45%;
+    margin-top: 3%;
+}
+
+/* ai img ar baper ta mona cilo na  */
+.right-side-div img {
+    width: 100%;
+}
+
+.left-side-div h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    font-size: 55px;
+    margin-left: 5%;
+}
+
+.left-side-div h1 span {
+    color: crimson;
+}
+
+.left-side-div h1 .jon {
+    color: rgb(243, 200, 7);
+    font-size: 60px;
+}
+
+.left-side-div h4 {
+    margin: 3% 0%;
+    font-size: 34px;
+    padding-left: 5%;
+    color: gray;
+}
+
+.left-side-div p {
+    padding: 0px 5%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 26px;
+    text-align: justify;
+    color: rgb(78, 74, 74);
+    padding-bottom: 25px;
+
+}
+
+.left-side-div .hire-me {
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid tomato;
+    margin-left: 5%;
+    padding: 10px 15px;
+    border-radius: 5%;
+    background: linear-gradient(rgb(246, 156, 140), rgb(246, 103, 77));
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 4px 6px 6px rgb(12, 11, 11);
+}
+
+.left-side-div a:hover {
+    /* background: rgb(255, 255, 0); */
+    color: black;
+    box-shadow: none;
+}
+
+/* end of container-flex div  */
+.container-flex2 {
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(rgba(22, 21, 21, 0.185), rgba(77, 70, 70, 0.411), rgba(31, 28, 28, 0.219)), url(img/dream-bg.png) no-repeat;
+    background-position: right;
+}
+
+.container-flex2 h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin-left: 5%;
+    color: rgb(31, 28, 28);
+}
+
+.h1 {
+    font-size: 45px;
+    color: rgb(44, 42, 42);
+    margin: 1%;
+}
+
+.container-flex3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: url(img/exp-bg.png) no-repeat;
+    margin-bottom: 5%;
+}
+
+.container-flex3 .left-div {
+    flex-basis: 40%;
+    border-left: 6px solid;
+    border-radius: 8px;
+    border-image: linear-gradient(rgb(0, 212, 255), rgb(43, 40, 238), rgb(21, 11, 218));
+    border-image-slice: 1;
+    box-shadow: 1px 5px 12px 6px grey;
+}
+
+.container-flex3 .left-div h1 {
+    font-size: 35px;
+    margin: 4%;
+}
+
+.container-flex3 .left-div h4 {
+    font-size: 24px;
+    margin: 1% 4% 3% 4%;
+    color: #ffa500
+}
+
+.container-flex3 .left-div p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 2% 5%;
+    text-align: justify;
+    padding-bottom: 15%;
+}
+
+.container-flex3 .right-div {
+    flex-basis: 40%;
+    box-shadow: 1px 5px 12px 6px grey;
+    border-radius: 8px;
+    border-left: 6px solid;
+    border-image: linear-gradient(#e1f80c, #f1e209, #ff00f2de);
+    border-image-slice: 1;
+}
+
+.container-flex3 .right-div h1 {
+    font-size: 35px;
+    margin: 4%;
+}
+
+.container-flex3 .right-div h4 {
+    font-size: 24px;
+    margin: 1% 4% 3% 4%;
+    color: #ffa500
+}
+
+.container-flex3 .right-div p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 2% 5%;
+    text-align: justify;
+    padding-bottom: 15%;
+
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(8, 8, 8);
+    padding: 5px;
+    font-size: 24px;
+
+}
+
+@media only screen and (max-width:400px) {
+    .container-flex {
+        flex-direction: column;
+    }
+
+    .right-side-div {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .container-flex2 {
+        flex-direction: column;
+    }
+
+    .container-flex3 {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .container-flex3 .left-div {
+        margin-top: 25px;
+    }
+
+    .h1 {
+        margin-top: 30px;
+    }
+
+    .container-flex3 .right-div {
+        margin-top: 4%;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .container-flex {
+        flex-direction: column;
+    }
+
+    .container-flex2 {
+        flex-direction: column;
+    }
+
+    .container-flex3 {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .container-flex3 .left-div {
+        margin-top: 25px;
+    }
+
+    .container-flex3 .right-div {
+        margin-top: 4%;
+    }
+
+    .left-side-div .hire-me {
+        margin-bottom: 20px;
+    }
+
+
+}
